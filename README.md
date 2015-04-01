@@ -4,17 +4,18 @@ This is the SCSS toolkit for the HEX brand. It is an attempt to provide simplici
 and abstraction similar to Bootstrap, but with our own aesthetic. It will be a
 no-bullshit look in black and white.
 
-Should be good, stay tuned.
+Beginning to become something. Stay tuned.
 
 ## Usage and documentation
 
-This toolkit is a customized version of the [Pure CSS framework][pure] from Yahoo.
-All the documentation on that framework is valid here as well.
+Currently the following is implemented:
 
-The differences will be mainly stylistic at first. New components will be listed
-here when they are developed.
+1. Button style (normal and large). `.w-btn` and `.w-btn-large`.
+1. Non-responsive grid. `.w-col-x-y` where `x` and `y` are integers from 1 - 12.
+   These form a rational number which determines the percentaged based
+   width of a column.
 
- [pure]:http://purecss.io/
+More documentation will follow as more features are added.
 
 ## Development setup
 
