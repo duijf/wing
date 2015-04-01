@@ -1,0 +1,48 @@
+// This file contains the CSS for the button elements in the user interface.
+//
+// First, we declare the structural elements of the buttons, which includes
+// the line-height, vertical alignment, text-alignment and the like.
+//
+// Afterwards we handle the aesthetic qualities and that kind of stuff.
+
+// Button structure
+.w-btn {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: inherit;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 3px #333 solid;
+}
+// Button hover, active and focus states
+.w-btn-hover,
+.w-btn:hover,
+.w-btn:focus {
+  color: #fff;
+  background: #333;
+}
+.w-btn-large {
+  padding: 15px 30px;
+  font-size: 1.25em;
+}
+.w-btn:focus {
+  outline: 0;
+}
+// Firefox: Get rid of the inner focus border
+.w-btn::-moz-focus-inner{
+  padding: 0;
+  border: 0;
+}
