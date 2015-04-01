@@ -1,28 +1,37 @@
-// This file contains the CSS for the button elements in the user interface.
+// src/wing/_buttons.scss
 //
-// First, we declare the structural elements of the buttons, which includes
-// the line-height, vertical alignment, text-alignment and the like.
+// This file contains the variables and styles for button classes.
 //
-// Afterwards we handle the aesthetic qualities and that kind of stuff.
+// Usage:
+//
+//   * Add the `.w-btn` class to an anchor element to get the styling.
+//   * Optionally add `.w-btn-large` class to get an increased size button.
+//
+
+// Variables for the amount of padding of the buttons
+
+$btn-padding-x: 1em !default;
+$btn-padding-y: 0.5em !default;
 
 // Button structure
 //
 // 1. Multiple buttons should be able to be placed next to each other.
 // 2. Buttons of different sizes should have centers aligned.
-// 3. `a.btn`s should not have underlined text.
+// 3. Anchor buttons should not have underlined text.
 // 4. Buttons don't wrap their whitespace
 // 5. The user's cursor should turn into a pointer when hovering.
+// 6. A button's text should increase with the page font-size.
 
 .w-btn {
   display: inline-block; // 1
-  padding: 10px 20px;
+  padding: $btn-padding-y $btn-padding-x;
   border: 3px #333 solid;
   vertical-align: middle; // 2
   text-align: center;
   text-decoration: none; // 3
   white-space: nowrap; // 4
-  cursor: pointer;
-  zoom: 1;
+  cursor: pointer; // 5
+  zoom: 1; // 6
 }
 
 // On hover and focus, `btn`s invert their colors.
@@ -37,7 +46,7 @@
 // A large `btn` has extra padding and an increased font size.
 
 .w-btn-large {
-  padding: 15px 30px;
+  padding: 1.5 * $btn-padding-y 1.5 * $btn-padding-x;
   font-size: 1.25em;
 }
 
