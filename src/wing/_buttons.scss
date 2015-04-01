@@ -6,42 +6,49 @@
 // Afterwards we handle the aesthetic qualities and that kind of stuff.
 
 // Button structure
+//
+// 1. Multiple buttons should be able to be placed next to each other.
+// 2. Buttons of different sizes should have centers aligned.
+// 3. `a.btn`s should not have underlined text.
+// 4. Buttons don't wrap their whitespace
+// 5. The user's cursor should turn into a pointer when hovering.
+
 .w-btn {
-  display: inline-block;
-  zoom: 1;
-  line-height: normal;
-  white-space: nowrap;
-  vertical-align: middle;
-  text-align: center;
-  cursor: pointer;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: inherit;
-  text-decoration: none;
+  display: inline-block; // 1
   padding: 10px 20px;
   border: 3px #333 solid;
+  vertical-align: middle; // 2
+  text-align: center;
+  text-decoration: none; // 3
+  white-space: nowrap; // 4
+  cursor: pointer;
+  zoom: 1;
 }
-// Button hover, active and focus states
+
+// On hover and focus, `btn`s invert their colors.
+
 .w-btn-hover,
 .w-btn:hover,
 .w-btn:focus {
-  color: #fff;
   background: #333;
+  color: #fff;
 }
+
+// A large `btn` has extra padding and an increased font size.
+
 .w-btn-large {
   padding: 15px 30px;
   font-size: 1.25em;
 }
+
+// Focussed buttons don't have an outline. That cocks up the page layout.
+
 .w-btn:focus {
   outline: 0;
 }
+
 // Firefox: Get rid of the inner focus border
+
 .w-btn::-moz-focus-inner{
   padding: 0;
   border: 0;
