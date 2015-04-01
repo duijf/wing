@@ -6,6 +6,16 @@ no-bullshit look in black and white.
 
 Should be good, stay tuned.
 
+## Usage and documentation
+
+This toolkit is a customized version of the [Pure CSS framework][pure] from Yahoo.
+All the documentation on that framework is valid here as well.
+
+The differences will be mainly stylistic at first. New components will be listed
+here when they are developed.
+
+ [pure]:http://purecss.io/
+
 ## Development setup
 
 1. Make sure you have Node.js and `npm` installed.
