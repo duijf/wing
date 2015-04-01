@@ -10,7 +10,8 @@ Beginning to become something. Stay tuned.
 
 Currently the following is implemented:
 
-1. Button style (normal and large). `.w-btn` and `.w-btn-large`.
+1. Button style (normal and large). `.w-btn` and `.w-btn-large`. Use both for a
+   large button style.
 1. Non-responsive grid. `.w-col-x-y` where `x` and `y` are integers from 1 - 12.
    These form a rational number which determines the percentaged based
    width of a column.
@@ -25,12 +26,16 @@ More documentation will follow as more features are added.
 
 ## Contributing
 
+Issues and feature requests are more than welcome!
+
+PR flow:
+
 1. Create a topic branch.
 1. Add commits.
 1. Rebase `master` into your topic branch.
 1. Open a PR.
 
-**Please never merge `master` into your topic branch.**
+**Please never merge `master` into your topic branch.** Use rebase instead.
 
 ## License situation
 
