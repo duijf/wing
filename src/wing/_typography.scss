@@ -60,6 +60,21 @@ h4 {
   line-height: $h4-line-height;
   margin: $h4-margin-top 0 $h4-margin-bottom 0;
 }
+h5 {
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+  margin: $h4-margin-top 0 $h4-margin-bottom 0;
+  font-weight: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+  margin: $h4-margin-top 0 $h4-margin-bottom 0;
+  font-weight: normal;
+  font-style: italic;
+}
 p,
 ul,
 blockquote {
@@ -79,12 +94,20 @@ pre {
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
-p code,
-li code {
-  display: inline;
+pre {
+  background-color: $base-07;
+  border: 3px $base-05 solid;
+  padding: 24px;
+  margin: $base-line-height 0;
+}
+code {
+  display: inline-block;
   font-family: 'Ubuntu Mono';
   font-size: $base-font-size - 0.2rem;
-  line-height: $base-line-height;
+  line-height: $base-line-height - 0.2rem;
+  background: $base-02;
+  color: $base-06;
+  padding: 0 0.3em;
 }
 ul {
   margin: $base-line-height 0;
