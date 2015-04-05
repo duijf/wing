@@ -1,3 +1,21 @@
+$base-00: #181818;
+$base-01: #282828;
+$base-02: #383838;
+$base-03: #585858;
+$base-04: #b8b8b8;
+$base-05: #d8d8d8;
+$base-06: #e8e8e8;
+$base-07: #f8f8f8;
+$base-08: #ab4642;
+$base-09: #dc9656;
+$base-0a: #f7ca88;
+$base-0b: #a1b56c;
+$base-0c: #86c1b9;
+$base-0d: #7cafc2;
+$base-0e: #ba8baf;
+$base-0f: #a16946;
+
+
 body,
 p,
 h1,
@@ -6,8 +24,8 @@ h3,
 h4,
 h5,
 h6 {
-    color: #403D40;
+    color: $base-01;
 }
 a {
-   color: #403D40;
+   color: $base-01;
 }

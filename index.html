@@ -6,12 +6,16 @@
   <link rel="stylesheet" href="wing.css">
   <style>
     .grid-demo-visual pre {
-      background: #E5DBE5;
+      background: #585858;
       margin: 0;
       text-align: center;
+      color: #f8f8f8;
     }
-    body {
-      padding: 27px;
+    .grid-demo-visual .unit {
+      padding: 10px;
+    }
+    .grid-demo-visual pre {
+      padding: 17px;
     }
   </style>
 </head>
@@ -28,24 +32,26 @@
     <ul>
       <li>We set up a baseline grid. Every element on this page has a height that is
       an exact multiple of 27 pixels.</li>
+      <li>We set the body font to <code>Fira Sans</code>, a nice webfont from Mozilla.</li>
+      <li>The header sizes are a multiple of the baseline height, and look quite nice.</li>
+      <li>The default HTML5 tags behave as you'd expect.</li>
     </ul>
   </section>
   <section class="buttons-demo">
     <h2>Buttons</h2>
 
-    <p>There are two kinds of buttons. Normal and large. To make a button, add the
-    <code>.w-btn</code> class to an anchor element. Add <code>.w-btn-large</code> if
-    you want a larger button.</p>
+    <p>To make a button, add the <code>.w-btn</code> class to an anchor element.</p>
 
     <p>
-      <a class="w-btn w-btn-large" href="#">Button large</a>
       <a class="w-btn" href="#">Button</a>
+      <a class="w-btn w-btn-primary" href="#">Primary button</a>
+      <a class="w-btn w-btn-succes" href="#">Succes button</a>
+      <a class="w-btn w-btn-danger" href="#">Danger button</a>
     </p>
 
     <h4>Code for this example</h4>
     <p><code>
-&lt;a class=&quot;w-btn w-btn-large&quot; href=&quot;#&quot;&gt;Button large&lt;/a&gt;<br/>
-&lt;a class=&quot;w-btn&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
+      &lt;a class=&quot;w-btn&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;<br/>&lt;a class=&quot;w-btn w-btn-primary&quot; href=&quot;#&quot;&gt;Primary button&lt;/a&gt;<br/>&lt;a class=&quot;w-btn w-btn-succes&quot; href=&quot;#&quot;&gt;Succes button&lt;/a&gt;<br/>&lt;a class=&quot;w-btn w-btn-danger&quot; href=&quot;#&quot;&gt;Danger button&lt;/a&gt;
     </code></p>
   </section>
 

@@ -5,10 +5,26 @@
 // Usage:
 //
 //   * Add the `.w-btn` class to an anchor element to get the styling.
-//   * Optionally add `.w-btn-large` class to get an increased size button.
 //
 
 // Variables for the amount of padding of the buttons
+
+$base-00: #181818;
+$base-01: #282828;
+$base-02: #383838;
+$base-03: #585858;
+$base-04: #b8b8b8;
+$base-05: #d8d8d8;
+$base-06: #e8e8e8;
+$base-07: #f8f8f8;
+$base-08: #ab4642;
+$base-09: #dc9656;
+$base-0a: #f7ca88;
+$base-0b: #a1b56c;
+$base-0c: #86c1b9;
+$base-0d: #7cafc2;
+$base-0e: #ba8baf;
+$base-0f: #a16946;
 
 $base-line-height: 1.6875rem;
 $btn-border: 0.1875rem;
@@ -27,13 +43,14 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
 .w-btn {
   display: inline-block; // 1
   padding: $btn-padding-y $btn-padding-x;
-  border: $btn-border #333 solid;
+  border: $btn-border $base-01 solid;
   vertical-align: middle; // 2
   text-align: center;
   text-decoration: none; // 3
   white-space: nowrap; // 4
   cursor: pointer; // 5
   zoom: 1; // 6
+  color: $base-01;
   line-height: $base-line-height;
   margin: $base-line-height 0;
 }
@@ -43,13 +60,8 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
 .w-btn-hover,
 .w-btn:hover,
 .w-btn:focus {
-  background: #333;
+  background: $base-01;
   color: #fff;
-}
-
-// A large `btn` has extra padding and an increased font size.
-
-.w-btn-large {
 }
 
 // Focussed buttons don't have an outline. That cocks up the page layout.
@@ -63,4 +75,32 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
 .w-btn::-moz-focus-inner{
   padding: 0;
   border: 0;
+}
+
+.w-btn-primary {
+  color: $base-0d;
+  border: $btn-border $base-0d solid;
+}
+.w-btn-primary-hover,
+.w-btn-primary:hover,
+.w-btn-primary:focus {
+  background: $base-0d;
+}
+.w-btn-succes {
+  color: $base-0b;
+  border: $btn-border $base-0b solid;
+}
+.w-btn-succes-hover,
+.w-btn-succes:hover,
+.w-btn-succes:focus {
+  background: $base-0b;
+}
+.w-btn-danger {
+  color: $base-08;
+  border: $btn-border $base-08 solid;
+}
+.w-btn-danger-hover,
+.w-btn-danger:hover,
+.w-btn-danger:focus {
+  background: $base-08;
 }
