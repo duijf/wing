@@ -10,8 +10,10 @@
 
 // Variables for the amount of padding of the buttons
 
-$btn-padding-x: 1em !default;
-$btn-padding-y: 0.5em !default;
+$base-line-height: 1.6875rem;
+$btn-border: 0.1875rem;
+$btn-padding-x: $base-line-height - $btn-border !default;
+$btn-padding-y: ($base-line-height / 2) - $btn-border !default;
 
 // Button structure
 //
@@ -25,13 +27,15 @@ $btn-padding-y: 0.5em !default;
 .w-btn {
   display: inline-block; // 1
   padding: $btn-padding-y $btn-padding-x;
-  border: 3px #333 solid;
+  border: $btn-border #333 solid;
   vertical-align: middle; // 2
   text-align: center;
   text-decoration: none; // 3
   white-space: nowrap; // 4
   cursor: pointer; // 5
   zoom: 1; // 6
+  line-height: $base-line-height;
+  margin: $base-line-height 0;
 }
 
 // On hover and focus, `btn`s invert their colors.
@@ -46,8 +50,6 @@ $btn-padding-y: 0.5em !default;
 // A large `btn` has extra padding and an increased font size.
 
 .w-btn-large {
-  padding: 1.5 * $btn-padding-y 1.5 * $btn-padding-x;
-  font-size: 1.25em;
 }
 
 // Focussed buttons don't have an outline. That cocks up the page layout.

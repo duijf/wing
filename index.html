@@ -4,162 +4,143 @@
   <meta charset="UTF-8">
   <title>wing test</title>
   <link rel="stylesheet" href="wing.css">
+  <style>
+    .grid-demo-visual pre {
+      background: #E5DBE5;
+      margin: 0;
+      text-align: center;
+    }
+    body {
+      padding: 27px;
+    }
+  </style>
 </head>
-<body>
-  <div class="container">
-    <section class="wing-demo grid">
-      <div class="unit whole">
-        <h1>Wing documentation</h1>
-        <p>Wing is the CSS toolkit for our branding. It features a no-frills and no
-        bullshit look. This is the first attempt at documentation.</p>
-      </div>
-    </section>
-    <section class="buttons-demo grid">
-      <div class="unit whole">
-        <h2>Buttons</h2>
+<body class="container">
+  <section class="wing-intro">
+    <h1>Wing documentation</h1>
+    <p>Wing is the CSS toolkit for our branding. It features a no-frills and a no
+    bullshit look. This is the first attempt at documentation.</p>
+  </section>
+  <section class="typography-demo">
+    <h2>Typography</h2>
+    <p>Wing comes with some sane typographic defaults, a nice typeface and a baseline
+    grid. Here's what wing does for you:</p>
+    <ul>
+      <li>We set up a baseline grid. Every element on this page has a height that is
+      an exact multiple of 27 pixels.</li>
+    </ul>
+  </section>
+  <section class="buttons-demo">
+    <h2>Buttons</h2>
 
-        <p>There are two kinds of buttons. Normal and large. To make a button, add the
-        <code>.w-btn</code> class to an anchor element. Add <code>.w-btn-large</code> if
-        you want a larger button.</p>
+    <p>There are two kinds of buttons. Normal and large. To make a button, add the
+    <code>.w-btn</code> class to an anchor element. Add <code>.w-btn-large</code> if
+    you want a larger button.</p>
 
-        <p>
-          <a class="w-btn w-btn-large" href="#">Button large</a>
-          <a class="w-btn" href="#">Button</a>
-        </p>
+    <p>
+      <a class="w-btn w-btn-large" href="#">Button large</a>
+      <a class="w-btn" href="#">Button</a>
+    </p>
 
-        <h4>Code for this example</h4>
-        <code>
-          &lt;a class=&quot;w-btn w-btn-large&quot; href=&quot;#&quot;&gt;Button large&lt;/a&gt;<br/>
-          &lt;a class=&quot;w-btn&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
-        </code>
-      </div>
-    </section>
+    <h4>Code for this example</h4>
+    <p><code>
+&lt;a class=&quot;w-btn w-btn-large&quot; href=&quot;#&quot;&gt;Button large&lt;/a&gt;<br/>
+&lt;a class=&quot;w-btn&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
+    </code></p>
+  </section>
 
-    <section class="grid-demo grid">
-      <div class="unit whole">
-        <h2>Grid system</h2>
+  <section class="grid-demo">
+    <h2>Grid system</h2>
 
-        <p>The grid system is quite simple. To begin a grid, use the <code>.grid</code>
-        class on any block element you like. Add a nested element with the classes
-        <code>.unit</code> and one for size. Size dictates the width of the element and is
-        one of the following:</p>
-        <div class="grid-demo-visual">
-          <div class="grid">
-            <div class="unit whole">
-              <pre>.whole</pre>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit half">
-              <pre>.half</pre>
-            </div>
-            <div class="unit half">
-              <pre>.half</pre>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit one-third">
-              <pre>.one-third</pre>
-            </div>
-            <div class="unit two-thirds">
-              <pre>.two-thirds</pre>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit one-quarter">
-              <pre>.one-quarter</pre>
-            </div>
-            <div class="unit three-quarters">
-              <pre>.three-quarters</pre>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit one-fifth">
-              <pre>.one-fifth</pre>
-            </div>
-            <div class="unit four-fifths">
-              <pre>.four-fifths</pre>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit two-fifths">
-              <pre>.two-fifths</pre>
-            </div>
-            <div class="unit three-fifths">
-              <pre>.three-fifths</pre>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="unit golden-large">
-              <pre>.golden-large</pre>
-            </div>
-            <div class="unit golden-small">
-              <pre>.golden-small</pre>
-            </div>
-          </div>
+    <p>The grid system is quite simple. To begin a grid, use the <code>.grid</code>
+    class on any block element you like. Add a nested element with the classes
+    <code>.unit</code> and one for size. Size dictates the width of the element and is
+    one of the following:</p>
+    <div class="grid-demo-visual">
+      <div class="grid">
+        <div class="unit whole">
+          <pre>.whole</pre>
         </div>
-        <div class="grid-demo-code">
-          <h4>Code for this example</h4>
-          <code>
-            <pre>
-&lt;div class=&quot;grid&quot;&gt;<br/>
-  &lt;div class=&quot;unit whole&quot;&gt;<br/>
-    &lt;pre&gt;.whole&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-&lt;/div&gt;<br/>
-&lt;div class=&quot;grid&quot;&gt;<br/>
-  &lt;div class=&quot;unit half&quot;&gt;<br/>
-    &lt;pre&gt;.half&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-  &lt;div class=&quot;unit half&quot;&gt;<br/>
-    &lt;pre&gt;.half&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-&lt;/div&gt;<br/>
-&lt;div class=&quot;grid&quot;&gt;<br/>
-  &lt;div class=&quot;unit one-third&quot;&gt;<br/>
-    &lt;pre&gt;.one-third&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-  &lt;div class=&quot;unit two-thirds&quot;&gt;<br/>
-    &lt;pre&gt;.two-thirds&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-&lt;/div&gt;<br/>
-&lt;div class=&quot;grid&quot;&gt;<br/>
-  &lt;div class=&quot;unit one-quarter&quot;&gt;<br/>
-    &lt;pre&gt;.one-quarter&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-  &lt;div class=&quot;unit three-quarters&quot;&gt;<br/>
-    &lt;pre&gt;.three-quarters&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-&lt;/div&gt;<br/>
-&lt;div class=&quot;grid&quot;&gt;<br/>
-  &lt;div class=&quot;unit one-fifth&quot;&gt;<br/>
-    &lt;pre&gt;.one-fifth&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-  &lt;div class=&quot;unit four-fifths&quot;&gt;<br/>
-    &lt;pre&gt;.four-fifths&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-&lt;/div&gt;<br/>
-&lt;div class=&quot;grid&quot;&gt;<br/>
-  &lt;div class=&quot;unit two-fifths&quot;&gt;<br/>
-    &lt;pre&gt;.two-fifths&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-  &lt;div class=&quot;unit three-fifths&quot;&gt;<br/>
-    &lt;pre&gt;.three-fifths&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-&lt;/div&gt;<br/>
-&lt;div class=&quot;grid&quot;&gt;<br/>
-  &lt;div class=&quot;unit golden-large&quot;&gt;<br/>
-    &lt;pre&gt;.golden-large&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
-  &lt;div class=&quot;unit golden-small&quot;&gt;<br/>
-    &lt;pre&gt;.golden-small&lt;/pre&gt;<br/>
-  &lt;/div&gt;<br/>
+      </div>
+      <div class="grid">
+        <div class="unit half">
+          <pre>.half</pre>
+        </div>
+        <div class="unit half">
+          <pre>.half</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="unit one-third">
+          <pre>.one-third</pre>
+        </div>
+        <div class="unit two-thirds">
+          <pre>.two-thirds</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="unit one-quarter">
+          <pre>.one-quarter</pre>
+        </div>
+        <div class="unit three-quarters">
+          <pre>.three-quarters</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="unit one-fifth">
+          <pre>.one-fifth</pre>
+        </div>
+        <div class="unit four-fifths">
+          <pre>.four-fifths</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="unit two-fifths">
+          <pre>.two-fifths</pre>
+        </div>
+        <div class="unit three-fifths">
+          <pre>.three-fifths</pre>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="unit golden-large">
+          <pre>.golden-large</pre>
+        </div>
+        <div class="unit golden-small">
+          <pre>.golden-small</pre>
+        </div>
+      </div>
+    </div>
+    <div class="grid-demo-code">
+      <h4>Code for this example</h4>
+      <code>
+        <pre>
+&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;unit whole&quot;&gt;
+&lt;pre&gt;.whole&lt;/pre&gt;
 &lt;/div&gt;
-            </pre>
-          </code>
-        </div>
-      </div>
-    </section>
-  </div>
+&lt;/div&gt;
+&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;unit half&quot;&gt;
+&lt;pre&gt;.half&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;unit half&quot;&gt;
+&lt;pre&gt;.half&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;unit one-third&quot;&gt;
+&lt;pre&gt;.one-third&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;unit two-thirds&quot;&gt;
+&lt;pre&gt;.two-thirds&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+etc..
+        </pre>
+      </code>
+    </div>
+  </section>
 </body>
 </html>

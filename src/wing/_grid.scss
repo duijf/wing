@@ -6,10 +6,10 @@
  * MIT
  */
 
-// Container
+$base-line-height: 1.6875rem;
+
 .container {
-  max-width: 750px;
-  margin: 0 auto;
+  padding: $base-line-height;
 }
 
 /* Preserve some sanity */
@@ -28,12 +28,12 @@
 .grid .unit {
   float: left;
   width: 100%;
-  padding: 10px;
+  padding: $base-line-height;
 }
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
-.grid .unit:first-child { padding-left: 20px; }
-.grid .unit:last-child { padding-right: 20px; }
+.grid .unit:first-child { padding-left: 0; }
+.grid .unit:last-child { padding-right: 0; }
 
 /* Nested grids already have padding though, so let’s nuke it */
 .unit .unit:first-child { padding-left: 0; }
