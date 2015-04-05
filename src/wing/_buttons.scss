@@ -4,7 +4,7 @@
 //
 // Usage:
 //
-//   * Add the `.w-btn` class to an anchor element to get the styling.
+//   * Add the `.button` class to an anchor element to get the styling.
 //
 
 // Variables for the amount of padding of the buttons
@@ -40,7 +40,7 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
 // 5. The user's cursor should turn into a pointer when hovering.
 // 6. A button's text should increase with the page font-size.
 
-.w-btn {
+.button {
   display: inline-block; // 1
   padding: $btn-padding-y $btn-padding-x;
   border: $btn-border $base-01 solid;
@@ -55,52 +55,53 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
   margin: $base-line-height 0;
 }
 
-// On hover and focus, `btn`s invert their colors.
+// On hover and focus, buttons invert their colors.
 
-.w-btn-hover,
-.w-btn:hover,
-.w-btn:focus {
+.button:hover,
+.button:focus {
   background: $base-01;
-  color: #fff;
+  color: $base-07;
 }
 
 // Focussed buttons don't have an outline. That cocks up the page layout.
 
-.w-btn:focus {
+.button:focus {
   outline: 0;
 }
 
 // Firefox: Get rid of the inner focus border
 
-.w-btn::-moz-focus-inner{
+.button::-moz-focus-inner{
   padding: 0;
   border: 0;
 }
 
-.w-btn-primary {
+.button.primary {
   color: $base-0d;
   border: $btn-border $base-0d solid;
 }
-.w-btn-primary-hover,
-.w-btn-primary:hover,
-.w-btn-primary:focus {
+.button.primary:hover,
+.button.primary:focus {
   background: $base-0d;
+  color: $base-07;
 }
-.w-btn-succes {
+.button.succes {
   color: $base-0b;
   border: $btn-border $base-0b solid;
 }
-.w-btn-succes-hover,
-.w-btn-succes:hover,
-.w-btn-succes:focus {
+.button.succes-hover,
+.button.succes:hover,
+.button.succes:focus {
   background: $base-0b;
+  color: $base-07;
 }
-.w-btn-danger {
+.button.danger {
   color: $base-08;
   border: $btn-border $base-08 solid;
 }
-.w-btn-danger-hover,
-.w-btn-danger:hover,
-.w-btn-danger:focus {
+.button.danger-hover,
+.button.danger:hover,
+.button.danger:focus {
   background: $base-08;
+  color: $base-07;
 }
