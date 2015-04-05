@@ -60,10 +60,18 @@ h4 {
   line-height: $h4-line-height;
   margin: $h4-margin-top 0 $h4-margin-bottom 0;
 }
-p {
+p,
+ul,
+blockquote {
   max-width: $measure;
   font-size: $base-font-size;
   line-height: $base-line-height;
+}
+p {
+  margin: 0;
+}
+p + p {
+  margin-top: $base-line-height;
 }
 code,
 pre {
@@ -71,7 +79,8 @@ pre {
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
-p code {
+p code,
+li code {
   display: inline;
   font-family: 'Ubuntu Mono';
   font-size: $base-font-size - 0.2rem;
