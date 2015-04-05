@@ -8,21 +8,15 @@ Beginning to become something. Stay tuned.
 
 ## Usage and documentation
 
-Currently the following is implemented:
-
-1. Button style (normal and large). `.w-btn` and `.w-btn-large`. Use both for a
-   large button style.
-1. Non-responsive grid. `.w-col-x-y` where `x` and `y` are integers from 1 - 12.
-   These form a rational number which determines the percentaged based
-   width of a column.
-
-More documentation will follow as more features are added.
+Documentation for all implemented features is currently available within the
+file `index.html`. Follow the development setup instructions to view these docs.
 
 ## Development setup
 
 1. Make sure you have Node.js and `npm` installed.
 1. Get the development dependencies with `npm install`.
 1. Run `gulp` to start a build process.
+1. Run a webserver in the project directory and view index.html in your browser.
 
 ## Contributing
 
