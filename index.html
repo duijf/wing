@@ -10,6 +10,7 @@
       margin: 0;
       text-align: center;
       color: #f8f8f8;
+      border: none;
     }
     .grid-demo-visual .unit {
       padding: 10px;
@@ -22,51 +23,72 @@
 <body class="container">
   <section class="wing-intro">
     <h1>Wing documentation</h1>
-    <p>Wing is the CSS toolkit for our branding. It features a no-frills and a no
-    bullshit look. This is the first attempt at documentation.</p>
+    <p>Wing is the CSS toolkit for our branding. It features a mostly black and white
+    and no-bullshit look.</p>
   </section>
   <section class="typography-demo">
     <h2>Typography</h2>
-    <p>Wing comes with some sane typographic defaults, a nice typeface and a baseline
-    grid. Here's what wing does for you:</p>
+    <p>Wing comes with some sane typographic defaults. Here's what wing does for you:</p>
     <ul>
-      <li>We set up a baseline grid. Every element on this page has a height that is
-      an exact multiple of 27 pixels.</li>
+      <li>Wing comes with a baseline-grid. Each element aligns on a multiple of 27
+      pixels.</li>
       <li>The body font is Fira Sans, from Mozilla.</li>
-      <li>The default HTML5 tags behave as you'd expect.</li>
+      <li>Monospace is handled by <code>Source Code Pro</code>.</li>
+      <li>HTML tags behave as you'd expect.</li>
     </ul>
     <h3>Headers</h3>
-    <p>The default headers are, with a scale factor of 1.8 for every larger
-    heading:</p>
+    <p>The default headers look like this:</p>
 
-    <h1>h1. 111 / 135px (page titles)</h1>
-    <h2>h2. 62 / 81px (main sections)</h2>
-    <h3>h3. 34 / 54px (subsections)</h3>
-    <h4>h4. 19 / 27px (subsubsections)</h4>
+    <h1>h1. 111 / 135px</h1>
+    <h2>h2. 62 / 81px</h2>
+    <h3>h3. 34 / 54px</h3>
+    <h4>h4. 19 / 27px bold</h4>
+    <h5>h5. 19 / 27px uppercase</h5>
+    <h6>h6. 19 / 27px italic</h6>
+
+    <p>We still have to make these be a bit more responsive on smaller displays.</p>
 
     <h3>Body copy</h3>
-    <p>The body copy is set at 19px as well, with a line height of 27px. All of these
-    are the defaults with the font-size on the root html tag set at 16px. The units
-    are rems and scale accordingly.</p>
 
-    <p>Body text, and lists and similar elements have a maximum length of 760px.</p>
+    <p>Paragraph text, lists and similar elements have a maximum length of 760px. You are free to override this, although it won't look as good. Enjoy the whitespace you gain.</p>
+
+    <p>The body copy is set at 19px with a line height of 27px. These are calculated
+    through rems. If a user is trying to change the font-size, they can.</p>
+
+    <h3>Inline elements</h3>
+
+    <ul>
+      <li>Of course, we can emphasize with the <strong>strong</strong> and
+      <em>em</em> tags.</li>
+
+      <li><code>&lt;code&gt;</code> tags are rendered in monospace with a dark
+      background.</li>
+
+      <li><del>Deleted</del> text is supported through the <code>&lt;del&gt;
+      </code> tag.</li>
+
+      <li>You can <mark>highlight</mark> text using the <code>&lt;mark&gt;
+      </code> tag.</li>
+
+      <li></li>
+    </ul>
+
   </section>
   <section class="buttons-demo">
     <h2>Buttons</h2>
 
     <p>To make a button, add the <code>.w-btn</code> class to an anchor element.</p>
 
+    <h4>Example</h4>
+
     <p>
-      <a class="w-btn" href="#">Button</a>
-      <a class="w-btn w-btn-primary" href="#">Primary button</a>
-      <a class="w-btn w-btn-succes" href="#">Succes button</a>
-      <a class="w-btn w-btn-danger" href="#">Danger button</a>
+      <a class="button" href="#">Button</a>
+      <a class="button primary" href="#">Primary button</a>
+      <a class="button succes" href="#">Succes button</a>
+      <a class="button danger" href="#">Danger button</a>
     </p>
 
-    <h4>Code for this example</h4>
-    <p><code>
-      &lt;a class=&quot;w-btn&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;<br/>&lt;a class=&quot;w-btn w-btn-primary&quot; href=&quot;#&quot;&gt;Primary button&lt;/a&gt;<br/>&lt;a class=&quot;w-btn w-btn-succes&quot; href=&quot;#&quot;&gt;Succes button&lt;/a&gt;<br/>&lt;a class=&quot;w-btn w-btn-danger&quot; href=&quot;#&quot;&gt;Danger button&lt;/a&gt;
-    </code></p>
+    <pre>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;<br/>&lt;a class=&quot;button primary&quot; href=&quot;#&quot;&gt;Primary button&lt;/a&gt;<br/>&lt;a class=&quot;button succes&quot; href=&quot;#&quot;&gt;Succes button&lt;/a&gt;<br/>&lt;a class=&quot;button danger&quot; href=&quot;#&quot;&gt;Danger button&lt;/a&gt;</pre>
   </section>
 
   <section class="grid-demo">
@@ -133,33 +155,29 @@
     </div>
     <div class="grid-demo-code">
       <h4>Code for this example</h4>
-      <code>
-        <pre>
-&lt;div class=&quot;grid&quot;&gt;
-&lt;div class=&quot;unit whole&quot;&gt;
-&lt;pre&gt;.whole&lt;/pre&gt;
-&lt;/div&gt;
+        <pre>&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;unit whole&quot;&gt;
+    &lt;pre&gt;.whole&lt;/pre&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;grid&quot;&gt;
-&lt;div class=&quot;unit half&quot;&gt;
-&lt;pre&gt;.half&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;unit half&quot;&gt;
-&lt;pre&gt;.half&lt;/pre&gt;
-&lt;/div&gt;
+  &lt;div class=&quot;unit half&quot;&gt;
+    &lt;pre&gt;.half&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;unit half&quot;&gt;
+    &lt;pre&gt;.half&lt;/pre&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;grid&quot;&gt;
-&lt;div class=&quot;unit one-third&quot;&gt;
-&lt;pre&gt;.one-third&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;unit two-thirds&quot;&gt;
-&lt;pre&gt;.two-thirds&lt;/pre&gt;
-&lt;/div&gt;
+  &lt;div class=&quot;unit one-third&quot;&gt;
+    &lt;pre&gt;.one-third&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;unit two-thirds&quot;&gt;
+    &lt;pre&gt;.two-thirds&lt;/pre&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-etc..
-        </pre>
-      </code>
+etc..</pre>
     </div>
   </section>
 </body>
