@@ -3,4 +3,5 @@ highlighter: rouge
 markdown: kramdown
 
 kramdown:
+  hard_wrap: false
   input: GFM
