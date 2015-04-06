@@ -115,6 +115,16 @@ pre code {
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
+kbd {
+  display: inline-block;
+  font-family: 'Ubuntu Mono';
+  font-size: $base-font-size - 0.2rem;
+  line-height: 1;
+  background: $base-03;
+  color: $base-06;
+  padding: 0.2em 0.3em 0 0.3em;
+  border-bottom: 5px $base-00 solid;
+}
 ul {
   margin: $base-line-height 0;
 }
