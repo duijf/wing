@@ -16,7 +16,9 @@ module Jekyll
       tmpl = File.read File.join Dir.pwd, "_includes", @text
       site = context.registers[:site]
       tmpl = (Liquid::Template.parse tmpl).render site.site_payload
-      html = Kramdown::Document.new(tmpl).to_html
+      config = Utils.symbolize_hash_keys(
+        context.registers[:site].config['kramdown'])
+      html = Kramdown::Document.new(tmpl, config).to_html
     end
   end
 end
