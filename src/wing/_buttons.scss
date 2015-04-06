@@ -57,6 +57,7 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
 
 // On hover and focus, buttons invert their colors.
 
+.button-hover,
 .button:hover,
 .button:focus {
   background: $base-01;
@@ -80,10 +81,12 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
   color: $base-0d;
   border: $btn-border $base-0d solid;
 }
+.button.primary-hover,
 .button.primary:hover,
 .button.primary:focus {
   background: $base-0d;
   color: $base-07;
+  border: $btn-border $base-0d solid;
 }
 .button.succes {
   color: $base-0b;
@@ -94,6 +97,7 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
 .button.succes:focus {
   background: $base-0b;
   color: $base-07;
+  border: $btn-border $base-0b solid;
 }
 .button.danger {
   color: $base-08;
@@ -104,4 +108,5 @@ $btn-padding-y: ($base-line-height / 2) - $btn-border !default;
 .button.danger:focus {
   background: $base-08;
   color: $base-07;
+  border: $btn-border $base-08 solid;
 }
