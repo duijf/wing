@@ -18,11 +18,61 @@ More about this in the following subsections.
 
 ### Baseline grid
 
-TODO: Definition baseline grid.
+A baseline grid is a grid, just like described above, but instead of focussing
+on aligning elements in columns, it focusses on rows. Each and every element
+aligns on the baseline grid, when using Wing.
+
+The easiest way to explain is to show you. Download the [baseliner] bookmarklet
+and use it on this page with a *grid size* of **27px** and the default offset.
+
+The grid is responsible for some good typography. The way the elements on this
+page are sized makes for easier reading. You are of course free to ignore this,
+but think about what you're throwing away.
+
+#### Sticking to the baseline
+
+This requires some work, however, it is not that difficult. You simply have to
+make sure that each and every element has a total height that is a multiple of
+**27px**. This means that the line-height *and* the total amount of borders,
+padding and margin should be a multiple of **27px**.
+
+If you are using SASS, we provide some convenience variables for you to use.
+`$base-line-height` can be used to set margins and padding. Use arithmathic
+to set a `font-size` and `line-height` that makes sense.
+
+If you're not using SASS, take a look at the whitespace helper methods, found
+later in this guide.
+
+ [baseliner]:http://keyes.ie/things/baseliner/
 
 ### Headings
 
-TODO: Showcase headings.
+The default headings align with the baseline grid and scale with a ratio of `1.8`.
+Here is a brief showcase&mdash;the first number denotes default pixel size, the
+second the line height:
+
+# h1. 111 / 135px
+
+## h2. 62 / 81px
+
+### h3. 34 / 54px
+
+#### h4. 19 / 27px bold
+
+##### h5. 19 / 27px uppercase
+
+###### h6. 19 / 27px italic
+
+Use them like you are used to:
+
+```html
+<h1>...</h1>
+<h2>...</h2>
+<h3>...</h3>
+<h4>...</h4>
+<h5>...</h5>
+<h6>...</h6>
+```
 
 ### Body copy
 
