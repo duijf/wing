@@ -80,7 +80,70 @@ TODO: Typographic rule about measure and give info on body copy.
 
 ### Inline elements
 
-TODO: Inline elements
+Wing leaves the default styling of most inline elements alone. For reference,
+this is what some common inline elements look like.
+
+#### Bold text
+
+`<strong>` tags render **in bold**.
+
+```html
+<strong>this will render in a bold font</strong>
+```
+
+#### Italicized text
+
+`<em>` tags render *in italics*.
+
+```html
+<em>this will render in an italic font-style</em>
+```
+
+#### Highlighted text
+
+Text that you want to <mark>highlight the importance of</mark>, you can surround
+with `<mark>` tags.
+
+```html
+<mark>this will be highlighted</mark>
+```
+
+#### Inserted text
+
+Text that you want to give the semantic meaning to of being a later addition to
+the document, you can surround with the `<ins>` tag.
+
+<ins>It will render as underlined.</ins>
+
+```html
+<ins>this will be treated as a later addition to the document</ins>
+```
+
+#### Strikethrough
+
+You can also <s>strike through</s> text with the `<s>` tag.
+
+```html
+<s>this text will be strucken</s>
+```
+
+#### Deleted text
+
+Text that you want to be treated as if it's deleted, can be marked up with the
+`<del>` tag. <del>It will also be rendered as struck through.</del>
+
+```html
+<del>this text will be treated as deleted</del>
+```
+
+#### Keyboard tag
+
+You can use the `<kbd>` tag to signify input the user needs to give. It will
+render as follows: Press <kbd>Ctrl + p</kbd> to print a web-page.
+
+```html
+Press <kdb>Ctrl + p</kbd> to print a web-page.
+```
 
 ### Code
 
