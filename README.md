@@ -8,6 +8,12 @@ Beginning to become something. Stay tuned.
 
 ## Usage and documentation
 
+**Currently, the documentation is being overhauled.** Instead of the bare-bones
+`index.html` file that was in use for the last days, we're moving the docs to
+a Jekyll site, located within `docs/`.
+
+The dev process will also change quite significantly. More in the coming week.
+
 Documentation for all implemented features is currently available within the
 file `index.html`. Follow the development setup instructions to view these docs.
 
