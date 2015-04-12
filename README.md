@@ -4,25 +4,44 @@ This is the SCSS toolkit for the HEX brand. It is an attempt to provide simplici
 and abstraction similar to Bootstrap, but with our own aesthetic. It will be a
 no-bullshit look in black and white.
 
-Beginning to become something. Stay tuned.
+## Quickstart
 
-## Usage and documentation
+The project is currently still in development. There is no quickstart yet.
+See the instructions for building the scss, and include the resulting file
+in your `<head>` like so:
 
-**Currently, the documentation is being overhauled.** Instead of the bare-bones
-`index.html` file that was in use for the last days, we're moving the docs to
-a Jekyll site, located within `docs/`.
+```html
+<link rel="stylesheet" href="/path/to/wing.css">
+```
 
-The dev process will also change quite significantly. More in the coming week.
+## Dependencies
 
-Documentation for all implemented features is currently available within the
-file `index.html`. Follow the development setup instructions to view these docs.
+To build the toolkit, you need to have `node` and `npm` installed.
 
-## Development setup
+To build and view the docs, you need to have the Ruby programming language
+installed, and the latest version of the `jekyll` gem.
 
-1. Make sure you have Node.js and `npm` installed.
-1. Get the development dependencies with `npm install`.
-1. Run `gulp` to start a build process.
-1. Run a webserver in the project directory and view index.html in your browser.
+## Building wing
+
+Make sure you have the dependencies installed. The following will build
+`wing.css` in the root of the repository.
+
+1. `git clone git@github.com:hex-sh/wing.git && cd wing`
+1. `npm install`
+1. `gulp`
+
+## Building the docs
+
+The documentation is a Jekyll site, which contains all the information on the
+usage of wing, what the default styles are and the components that wing ships
+with.
+
+Currently, you have to build the site yourself to view it. You can do this with
+the following set of commands.
+
+1. `cd wing/docs`
+1. `jekyll serve --watch`
+1. `open http://localhost:4000`
 
 ## Contributing
 
