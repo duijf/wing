@@ -1,0 +1,90 @@
+//
+// This stylesheet contains the default variables that wing ships with.
+// These are used throughout the code-base.
+//
+
+// Baseline grid variables
+//
+// These variables control the behavior of the main typogrpahy and the baseline
+// grid.
+//
+// The $base-font-size and $base-line-height variables are used to create the
+// baseline grid that wing ships with.
+//
+// $measure is the max-width of an ideal paragraph under the above conditions.
+
+$base-font-size: 1.1875rem;
+$base-line-height: 1.6875rem;
+$measure: 760px;
+
+// Font variables
+//
+// These are used to calculate the line height and the margins of the header
+// elements.
+
+$h1-font-size: 6.9375rem;
+$h1-line: 1.6875rem;
+$h1-lines: 5;
+$h1-line-height: $h1-line * $h1-lines;
+$h1-margin-top: 2 * $h1-line;
+$h1-margin-bottom: 1 * $h1-line;
+
+$h2-font-size: 3.875rem;
+$h2-line: 1.6875rem;
+$h2-lines: 3;
+$h2-line-height: $h2-line * $h2-lines;
+$h2-margin-top: 2 * $h2-line;
+$h2-margin-bottom: 1 * $h2-line;
+
+$h3-font-size: 2.125rem;
+$h3-line: 1.6875rem;
+$h3-lines: 2;
+$h3-line-height: $h3-line * $h3-lines;
+$h3-margin-top: 1 * $h3-line;
+$h3-margin-bottom: 1 * $h3-line;
+
+$h4-font-size: 1.1875rem;
+$h4-line: 1.6875rem;
+$h4-lines: 1;
+$h4-line-height: $h4-line * $h4-lines;
+$h4-margin-top: 1 * $h4-line;
+$h4-margin-bottom: 1 * $h4-line;
+
+$h5-font-size: 1.1875rem;
+$h5-line: 1.6875rem;
+$h5-lines: 1;
+$h5-line-height: $h5-line * $h5-lines;
+$h5-margin-top: 1 * $h5-line;
+$h5-margin-bottom: 1 * $h5-line;
+
+$h6-font-size: 1.1875rem;
+$h6-line: 1.6875rem;
+$h6-lines: 1;
+$h6-line-height: $h6-line * $h6-lines;
+$h6-margin-top: 1 * $h6-line;
+$h6-margin-bottom: 1 * $h6-line;
+
+// Color variables
+
+$base-00: #181818;
+$base-01: #282828;
+$base-02: #383838;
+$base-03: #585858;
+$base-04: #b8b8b8;
+$base-05: #d8d8d8;
+$base-06: #e8e8e8;
+$base-07: #f8f8f8;
+$base-08: #ab4642;
+$base-09: #dc9656;
+$base-0a: #f7ca88;
+$base-0b: #a1b56c;
+$base-0c: #86c1b9;
+$base-0d: #7cafc2;
+$base-0e: #ba8baf;
+$base-0f: #a16946;
+
+// Variables for the amount of padding of the buttons
+
+$btn-border: 0.1875rem;
+$btn-padding-x: $base-line-height - $btn-border !default;
+$btn-padding-y: ($base-line-height / 2) - $btn-border !default;
